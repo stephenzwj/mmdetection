@@ -251,7 +251,7 @@ load_from = 'checkpoints/mask_rcnn_r50_caffe_fpn_mstrain-poly_3x_coco_bbox_mAP-0
 为了使用新的配置方法来对模型进行训练，你只需要运行如下命令。
 
 ```shell
-python tools/train.py configs/balloon/mask_rcnn_r50_caffe_fpn_mstrain-poly_1x_balloon.py
+python tools/train.py configs/balloon/mask_rcnn_r50_caffe_fpn_mstrain-poly_1x_IDID.py
 ```
 
 参考[情况 1](./1_exist_data_model.md)来获取更多详细的使用方法。
@@ -261,7 +261,7 @@ python tools/train.py configs/balloon/mask_rcnn_r50_caffe_fpn_mstrain-poly_1x_ba
 为了测试训练完毕的模型，你只需要运行如下命令。
 
 ```shell
-python tools/test.py configs/balloon/mask_rcnn_r50_caffe_fpn_mstrain-poly_1x_balloon.py work_dirs/mask_rcnn_r50_caffe_fpn_mstrain-poly_1x_balloon.py/latest.pth --eval bbox segm
+python tools/test.py configs/balloon/mask_rcnn_r50_caffe_fpn_mstrain-poly_1x_IDID.py work_dirs/mask_rcnn_r50_caffe_fpn_mstrain-poly_1x_IDID.py/latest.pth --eval bbox segm
 ```
 
 参考[情况 1](./1_exist_data_model.md)来获取更多详细的使用方法。
